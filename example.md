@@ -14,5 +14,5 @@ This is a notice of violation observed by a member of the community. If you woul
 Please bring any payment to the Challenge School office, or visit [challengeptco.com](https://challengeptco.com) to pay online.
 
 <small markdown="1">
-This notice was not authorized, approved, endorsed, or placed by: Challenge School; the PTCO; Cherry Creek school district; the city, county, or state; or any staff thereof. It was created by a parent frustrated by the constant safety and efficiency issues observed in our parking lot. To print your own and participate in guerilla societal improvement, visit [guerilla-ticket.github.io](https://guerilla-ticket.github.io)
+This notice was not authorized, approved, endorsed, or placed by: Challenge School; the PTCO; Cherry Creek school district; the city, county, or state; or any staff thereof. It was created by a parent frustrated by the constant safety and efficiency issues observed in our parking lot. To print your own and participate in guerrilla societal improvement, visit [{{ site.domain }}]({{ site.url }})
 </small>

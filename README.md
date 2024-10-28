@@ -21,4 +21,8 @@ For the best results, we recommend the following:
 
 ## Example
 
-View [the example](/example) that inspired this site.
+View [the live example](https://guerrilla-ticket.github.io/example) that inspired this site, or view [its source code](https://github.com/guerrilla-ticket/guerrilla-ticket.github.io/blob/main/example.md).
+
+## Get Involved
+
+Want to contribute? Head over to the [GitHub repository](https://github.com/guerrilla-ticket/guerrilla-ticket.github.io) for the source code. File an issue if you see something that could be improved, or open a pull request if you want to get your hands dirty, too!
