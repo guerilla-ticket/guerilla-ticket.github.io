@@ -51,34 +51,56 @@
       }
 
       body {
-        margin: 0 auto;
+        border: 0.125em solid;
+        margin: 1em auto;
         max-width: 35em;
-        padding: 0 1em;
+        padding: 0 1em 1em;
       }
 
-      h1, h2, h3, h4, h5, h6, a, footer {
+      h1, h2, h3, h4, h5, h6, footer {
         background-color: var(--fg);
         color: var(--bg);
+        font-weight: 900;
         padding: 0.25em;
         text-align: center;
+        text-transform: uppercase;
       }
 
-      h1 {
-        font-weight: 900;
-        text-transform: uppercase;
+      footer {
+        font-family: monospace;
+        font-weight: inherit;
+        text-transform: inherit;
       }
 
       a {
         color: inherit;
       }
 
+      em {
+        font-style: normal;
+        text-transform: uppercase;
+      }
+
+      strong {
+        font-weight: 900;
+      }
+
+      small {
+        font-size: 0.75em;
+        line-height: 0;
+      }
+
       ul.task-list {
         list-style: none;
         padding-inline-start: 1.75em;
+        display: flex;
+        flex-wrap: wrap;
+        column-gap: 3.75em
       }
 
       ul.task-list li {
-        margin-block: 0.5em;
+        flex-grow: 1;
+        margin-block-end: 1em;
       }
 
       ul.task-list input {
@@ -108,7 +130,7 @@
     {{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http' }}
 
     <footer>
-      <a href="https://creativecommons.org/licenses/by-nc/4.0/" title="Licensed under CC BY-NC 4.0">🄯 {{ site.time | date: '%Y' }} {{ site.title }} Contributors</a>
+      {{ site.time | date: '%Y-%m-%d' }} | {{ page.url | prepend: site.domain }}
     </footer>
   </body>
 </html>
