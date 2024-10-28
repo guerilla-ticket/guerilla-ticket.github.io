@@ -1,6 +1,7 @@
 # Site-wide generic info (overridable per-page)
-title: Guerilla Ticket
+title: Guerrilla Ticket
 description: Openly-licensed and completely unapproved resources to call out vehicle owners while supporting good causes
+theme-color: "#ff7800"
 
 # Settings
 markdown: kramdown

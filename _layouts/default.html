@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en-us">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{% if page.title %}{{ page.title }} &sdot; {% endif %}{{ site.title }}</title>
+    <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta property="og:site_name" content="{{ site.title }}">
+    <meta itemprop="name" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}">
+    <meta name="theme-color" content="{{ site.theme-color }}">
+
+    <link rel="preconnect" href="https://rsms.me/">
+    <link rel="stylesheet" href="https://rsms.me/inter/inter.css">
+    <style>
+      :root {
+        --theme-color: {{ site.theme-color }};
+        --theme-color-contrast: black;
+
+        --bg: var(--theme-color);
+        --fg: var(--theme-color-contrast);
+
+        background: var(--bg);
+        color: var(--fg);
+
+        font-family: Inter, sans-serif;
+        font-feature-settings: 'liga' 1, 'calt' 1; /* fix for Chrome */
+        font-size: 18px;
+        line-height: 1.75em;
+        text-align: justify;
+      }
+
+      @supports (font-variation-settings: normal) {
+        :root { font-family: InterVariable, sans-serif; }
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: var(--theme-color-contrast);
+          --fg: var(--theme-color);
+        }
+      }
+
+      @media (prefers-contrast: more) {
+        --theme-color: white;
+      }
+
+      @media print {
+        :root {
+          --bg: white;
+          --fg: black;
+        }
+      }
+
+      body {
+        margin: 0 auto;
+        max-width: 35em;
+        padding: 0 1em;
+      }
+
+      h1, h2, h3, h4, h5, h6, a, footer {
+        background-color: var(--fg);
+        color: var(--bg);
+        padding: 0.25em;
+        text-align: center;
+      }
+
+      h1 {
+        font-weight: 900;
+        text-transform: uppercase;
+      }
+
+      a {
+        color: inherit;
+      }
+
+      ul.task-list {
+        list-style: none;
+        padding-inline-start: 1.75em;
+      }
+
+      ul.task-list li {
+        margin-block: 0.5em;
+      }
+
+      ul.task-list input {
+        all: unset;
+        display: inline-block;
+        margin-inline-start: -1.75em;
+        margin-inline-end: 0.5em;
+        width: 1em;
+        height: 1em;
+        border: 0.125em solid;
+        vertical-align: text-bottom;
+        position: relative;
+      }
+
+      ul.task-list input:checked::before {
+        content: "×";
+        position: absolute;
+        left: 50%;
+        top: 50%;
+        transform: translate(-50%, -50%);
+        font-family: inherit;
+        font-weight: 900;
+      }
+    </style>
+  </head>
+  <body>
+    {{ content | replace: '<a href="http', '<a rel="nofollow noopener noreferrer" target="_blank" href="http' }}
+
+    <footer>
+      <a href="https://creativecommons.org/licenses/by-nc/4.0/" title="Licensed under CC BY-NC 4.0">🄯 {{ site.time | date: '%Y' }} {{ site.title }} Contributors</a>
+    </footer>
+  </body>
+</html>
