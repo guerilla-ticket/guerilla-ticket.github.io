@@ -1,0 +1,14 @@
+# Site-wide generic info (overridable per-page)
+title: Guerilla Ticket
+description: Openly-licensed and completely unapproved resources to call out vehicle owners while supporting good causes
+
+# Settings
+markdown: kramdown
+kramdown:
+  syntax_highlighter: rouge
+
+# Plugins
+plugins:
+  - jekyll-feed
+  - jekyll-redirect-from
+  - jekyll-sitemap
