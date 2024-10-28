@@ -22,7 +22,7 @@ For the best results, we recommend the following:
 
 ## Example
 
-View [the live example](https://guerrilla-ticket.github.io/example) that inspired this site, or view [its source code](https://github.com/guerrilla-ticket/guerrilla-ticket.github.io/blob/main/example.md).
+View [the live example](https://guerrilla-ticket.github.io/challenge) that inspired this site, or view [its source code](https://github.com/guerrilla-ticket/guerrilla-ticket.github.io/blob/main/challenge.md).
 
 ## Get Involved
 
