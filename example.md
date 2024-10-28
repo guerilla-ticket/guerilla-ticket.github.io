@@ -1,3 +1,7 @@
+---
+layout: 4x
+---
+
 # Parking Violation
 
 To ensure safe and effective parking, student drop-off, and student pick-up, _every parked vehicle must be in a marked parking spot_. Parking along the side or back of the parking lot reduces visibility, prevents other vehicles from safely operating in the parking lot, and is _strictly prohibited_. The red-painted curb is a fire zone. _Parking in a fire zone is illegal and dangerous._ If an emergency vehicle needs to respond, they will tow or otherwise _forcibly remove your vehicle_—and between your vehicle and a fire truck, the fire truck will always win.

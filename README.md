@@ -14,6 +14,7 @@ Guerrilla Ticket was created after years of frustration seeing people disregard 
 
 For the best results, we recommend the following:
 
+- [x] JavaScript is required to automatically duplicate the page (to print 4 copies to a page)
 - [x] Use the most fluorescent paper you can find, e.g. bright orange
 - [x] Uncheck "Print headers and footers" (or similar)
 - [x] Check "Print backgrounds" (or similar)

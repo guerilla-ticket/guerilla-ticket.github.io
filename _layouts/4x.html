@@ -1,0 +1,16 @@
+---
+layout: default
+---
+
+{{ content }}
+
+<script>
+  window.addEventListener('load', function () {
+    let body = document.getElementsByTagName("body")[0];
+    body.after(
+      body.cloneNode(true),
+      body.cloneNode(true),
+      body.cloneNode(true)
+    );
+  });
+</script>
